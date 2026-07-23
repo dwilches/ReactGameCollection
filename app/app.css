@@ -5,9 +5,17 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+@font-face {
+  font-family: RetroBounce;
+  font-weight: 500;
+  src: url("/fonts/RatesademoRegular-YqZEO.ttf") format("truetype");
+}
+
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-sky-950;
+
+  font-family: RetroBounce, sans-serif;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
