@@ -33,13 +33,12 @@ export default function GameChooser() {
                 </Button>
                 <span className={ "text-4xl" }>{/* spacer for alignment */ }</span>
             </div>
-
             <div className="size-50 m-2">
                 <Transition show={ isShowing }>
                     <div
                         className={ clsx(
                             'size-full rounded-xl bg-white/5 hover:bg-sky-800 shadow-lg transition duration-400',
-                            'data-closed:scale-50 data-closed:rotate-[-120deg] data-closed:opacity-0',
+                            'data-closed:scale-50 data-closed:rotate-[-120deg] data-closed:opacity-50',
                             'data-leave:duration-200 data-leave:ease-in-out',
                             'data-leave:data-closed:scale-95 data-leave:data-closed:rotate-0 p-1',
                             'flex flex-col items-center',

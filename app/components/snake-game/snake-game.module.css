@@ -16,6 +16,15 @@
     @apply border border-sky-500 size-10 border-collapse
 }
 
+.actionButtonsContainer {
+    @apply flex gap-2 mt-2;
+
+    button {
+        @apply text-lg;
+    }
+}
+
+
 .aliveSnakeCell {
     @apply bg-green-300
 }
@@ -26,12 +35,4 @@
 
 .fruitCell {
     @apply bg-rose-300
-}
-
-.actionButtonsContainer {
-    @apply flex gap-2 mt-2;
-
-    button {
-        @apply text-lg;
-    }
 }
