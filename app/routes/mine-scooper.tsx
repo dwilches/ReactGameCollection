@@ -1,5 +1,5 @@
-export default function MineScooperGame() {
+export default function MineScooper() {
     return (<>
-        MineScooper
+        MineScooper: not yet implemented
     </>);
 }

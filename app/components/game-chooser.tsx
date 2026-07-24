@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Transition } from '@headlessui/react';
+import { Button, Transition } from '@headlessui/react';
 import clsx from 'clsx';
 import { useNavigate, useSearchParams } from "react-router";
-import { GameChooserButton } from "~/components/game-chooser-button";
 
 const allGames = [
     { name: "Snake", url: "snake", image: "snake.png" },
@@ -29,8 +28,10 @@ export default function GameChooser() {
     return (
         <div className="mt-8 flex  items-center h-screen justify-center">
             <div>
-                <GameChooserButton text={ "‹‹" } onClick={ () => showNextGame(-1) }/>
-                <span className={ "text-4xl" }>&nbsp;</span>
+                <Button onClick={ () => showNextGame(-1) }>
+                    <span>‹‹</span>
+                </Button>
+                <span className={ "text-4xl" }>{/* spacer for alignment */ }</span>
             </div>
 
             <div className="size-50 m-2">
@@ -55,8 +56,10 @@ export default function GameChooser() {
             </div>
 
             <div>
-                <GameChooserButton text={ "››" } onClick={ () => showNextGame(+1) }/>
-                <span className={ "text-4xl" }>&nbsp;</span>
+                <Button onClick={ () => showNextGame(+1) }>
+                    <span>››</span>
+                </Button>
+                <span className={ "text-4xl" }>{/* spacer for alignment */ }</span>
             </div>
         </div>
     );

@@ -1,23 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @font-face {
-  font-family: RetroBounce;
-  font-weight: 500;
-  src: url("/fonts/RatesademoRegular-YqZEO.ttf") format("truetype");
+    font-family: RetroBounce;
+    font-weight: 500;
+    src: url("/fonts/RatesademoRegular-YqZEO.ttf") format("truetype");
 }
 
 html,
 body {
-  @apply bg-white dark:bg-sky-950;
+    @apply bg-white dark:bg-sky-950;
 
-  font-family: RetroBounce, sans-serif;
+    font-family: RetroBounce, sans-serif;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+button {
+    @apply bg-white flex items-center gap-2 rounded-full px-3 py-1;
+    @apply bg-white/10 text-sm/6 font-semibold text-white transition hover:bg-sky-800;
+    @apply data-hover:scale-105 cursor-pointer;
 }

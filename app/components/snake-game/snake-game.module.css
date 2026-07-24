@@ -1,0 +1,37 @@
+@import "../../../node_modules/tailwindcss/dist/lib.d.mts";
+
+.gameContainer {
+    @apply flex flex-col gap-1 items-center
+}
+
+.boardContainer {
+    @apply flex flex-col border-sky-300 border-4
+}
+
+.boardRow {
+    @apply flex
+}
+
+.boardCell {
+    @apply border border-sky-500 size-10 border-collapse
+}
+
+.aliveSnakeCell {
+    @apply bg-green-300
+}
+
+.deadSnakeCell {
+    @apply bg-rose-800
+}
+
+.fruitCell {
+    @apply bg-rose-300
+}
+
+.actionButtonsContainer {
+    @apply flex gap-2 mt-2;
+
+    button {
+        @apply text-lg;
+    }
+}
