@@ -1,4 +1,4 @@
-@import "../../../node_modules/tailwindcss/dist/lib.d.mts";
+@import "tailwindcss";
 
 .gameContainer {
     @apply flex flex-col gap-1 items-center
