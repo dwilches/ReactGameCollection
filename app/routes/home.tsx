@@ -8,6 +8,8 @@ export function meta({}: Route.MetaArgs) {
     return [
         { title: "React Game Collection" },
         { name: "description", content: "Some simple games using React" },
+        { tagName: "link", rel: "preload", as: "image", href: "mine-scooper.png" },
+        { tagName: "link", rel: "preload", as: "image", href: "snake.png" },
     ];
 }
 

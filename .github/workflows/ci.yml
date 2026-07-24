@@ -27,6 +27,10 @@ jobs:
         run: |
           npm ci
           npm run build
+          
+          # Needed for SPAs in GitHub Pages, as refreshing the browser on a non-existent route will retrieve the 
+          # content of 404.html 
+          cp build/client/index.html build/client/404.html
 
       - uses: actions/upload-pages-artifact@v3
         with:

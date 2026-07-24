@@ -33,26 +33,26 @@
 }
 
 .unknownCell {
-    background-image: url("icons/mine-scooper/maple-leaf.png"), url("icons/mine-scooper/grassland.png");
+    background-image: url("/icons/mine-scooper/maple-leaf.png"), url("/icons/mine-scooper/grassland.png");
     background-size: cover;
 }
 
 .mineCell {
-    background-image: url("icons/mine-scooper/poop.png"), url("icons/mine-scooper/grassland.png");
+    background-image: url("/icons/mine-scooper/poop.png"), url("/icons/mine-scooper/grassland.png");
     background-size: cover;
 }
 
 .markedCell {
-    background-image: url("icons/mine-scooper/flag.png"), url("icons/mine-scooper/maple-leaf.png"), url("icons/mine-scooper/grassland.png");
+    background-image: url("/icons/mine-scooper/flag.png"), url("/icons/mine-scooper/maple-leaf.png"), url("/icons/mine-scooper/grassland.png");
     background-size: cover;
 }
 
 .explodedCell {
-    background-image: url("icons/mine-scooper/paint.png"), url("icons/mine-scooper/grassland.png");
+    background-image: url("/icons/mine-scooper/paint.png"), url("/icons/mine-scooper/grassland.png");
     background-size: cover;
 }
 
 .emptyCell {
-    background-image: url("icons/mine-scooper/grassland.png");
+    background-image: url("/icons/mine-scooper/grassland.png");
     background-size: cover;
 }

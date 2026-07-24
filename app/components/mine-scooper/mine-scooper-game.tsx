@@ -5,8 +5,8 @@ import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router";
 import { cloneDeep } from "lodash-es";
 
-const BoardRows = 5;
-const BoardCols = 5;
+const BoardRows = 10;
+const BoardCols = 10;
 
 const MineProbability = 0.2;
 
